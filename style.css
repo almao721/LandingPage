@@ -1,0 +1,326 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#000;
+  color:#f5f5f5;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* Nav */
+.custom-navbar{
+  background:#111111;
+}
+.nav-link{
+  transition:.3s;
+}
+
+.nav-link:hover{
+  color:#ffffff !important;
+}
+
+/* Hero */
+.hirrono{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top:80px;
+}
+
+.hirrono .col-lg-,
+.hirrono .col-lg-7{
+  position:relative;
+}
+
+.hirrono .col-lg-7{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hirrono h1{
+  font-size:3.5rem;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.hirrono p{
+  color:#bdbdbd;
+  font-size:1.2rem;
+}
+
+.profile-img{
+  width:520px;
+  height:420px;
+  object-fit:contain;
+  position:relative;
+  z-index:10;
+  filter:
+  drop-shadow(0 0 20px rgba(25,205,61,.4))
+  drop-shadow(0 0 40px rgba(255,0,0,.2));
+}
+
+.dekor1{
+  width:180px;
+  position:absolute;
+  top:20px;
+  left:70px;
+  z-index:1;
+  opacity:.9;
+  animation:ngambang 5s infinite;
+}
+
+.dekor2{
+  width:160px;
+  position:absolute;
+  right:-80px;
+  bottom:20px;
+  z-index:1;
+  opacity:.9;
+  animation:ngambang 4s infinite;
+}
+
+.dekor3{
+  width:140px;
+  position:absolute;
+  top:-70px;
+  right:50px;
+  z-index:1;
+  opacity:.9;
+  animation:ngambang 6s infinite;
+}
+
+.dekor4{
+  display:none;
+}
+
+.profile-img,
+.hirrono h1,
+.hirrono p{
+  position:relative;
+  z-index:10;
+}
+/*SVG alias Get Waves */
+.wave-top,
+.wave-bottom{
+  line-height:0;
+}
+
+.wave-top svg,
+.wave-bottom svg{
+  display:block;
+  width:100%;
+}
+
+/* About */
+#about{
+  background:#111111;
+  padding:90px 20px;
+  text-align:center;
+}
+
+#about h2{
+  color:#F5F5F5;
+  font-size:3rem;
+  margin-bottom:25px;
+}
+
+#about p{
+  max-width:850px;
+  margin:auto;
+  line-height:1.9;
+  color:#BDBDBD;
+}
+
+/* Project */
+#project{
+  background:#000;
+  padding:100px 0;
+}
+
+.section-title{
+  font-size:2.5rem;
+  margin-bottom:50px;
+}
+
+.masterpiece-title{
+  position:relative;
+}
+
+.poyoyoi-title{
+  width:120px;
+  position:absolute;
+  top:-60px;
+  right:20%;
+  animation:ngambang 3s ease-in-out infinite;
+}
+
+.what-cortis-do{
+  width:120px;
+  position:absolute;
+  left:3%;
+  top:40%;
+  transform:translate(-50%,-50%);
+  z-index:3;
+  animation:ngambang 5s ease-in-out infinite;
+  pointer-events:none;
+}
+
+.blue-lips{
+  width:100px;
+  position:absolute;
+  right:-35px;
+  bottom:-45px;
+  z-index:3;
+  animation:ngambang 6s ease-in-out infinite;
+  pointer-events:none;
+}
+
+.project-card{
+  background:#1E1E1E;
+  border-radius:20px;
+  padding:15px;
+  text-align:center;
+  transition:.3s;
+  height:100%;
+}
+
+.project-card:hover{
+  background:#2A2A2A;
+  transform:translateY(-8px);
+}
+
+.project-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.project-card h4{
+  color:#F5F5F5;
+  font-size:1.1rem;
+  margin:0;
+}
+
+.project-link{
+  text-decoration:none;
+  color:#F5F5F5;
+}
+
+.project-link:hover{
+  color:#F5F5F5;
+}
+
+/* contact us*/
+#contact{
+  padding:100px;
+}
+
+.contact-card{
+  width:700px;
+  max-width:200%;
+  height:330px;
+  margin:auto;
+  background:#1e1e1e;
+  border:none;
+}
+
+.form-control{
+  background:#111111;
+  border:none;
+  color:#ffffff;
+}
+
+.form-control:focus{
+  background:#111111;
+  color:#ffffff;
+  box-shadow:none;
+}
+
+.tombol-orang-kece{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#f5f5f5;
+  color:#111111;
+  font-weight:600;
+  transition:.3s;
+}
+
+.tombol-orang-kece:hover{
+  background:#ffffff;
+  transform:translateY(-3px);
+}
+
+/* footer */
+footer{
+  background:#111111;
+  padding:50px 0;
+}
+
+.footer-menu{
+  list-style:none;
+  padding:0;
+}
+
+.footer-menu li{
+  margin-bottom:10px;
+}
+
+footer a{
+  color:#F5F5F5;
+  text-decoration:none;
+  transition:.3s;
+}
+
+footer a:hover{
+  color:#BDBDBD;
+}
+
+footer i{
+  margin-right:8px;
+}
+
+hr{
+  border-color:#333333;
+}
+
+/* responsive */
+@media(max-width:768px){
+  
+  .hirrono{
+    text-align:center;
+  }
+  
+  .hirrono h1{
+    font-size:2.2rem;
+  }
+  
+  .profile-img{
+    width:240px;
+    height:240px;
+  }
+  
+  #about .section-title{
+    font-size:2.2rem;
+  }
+  
+}
+@keyframes ngambang{
+  100%,0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-15px);
+  }
+}
