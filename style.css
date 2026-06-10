@@ -47,11 +47,15 @@ body{
 
 
 .hirrono h1{
-  font-family: "Martin";
+  font-family:"Martin";
   font-size:600%;
-  font-weight: normal;
-  margin-bottom: 5px;
+  font-weight:normal;
+  margin-bottom:5px;
+  color:#fff;
+  animation:glow 2.5s ease-in-out infinite alternate;
 }
+
+
 
 .hirrono p{
   color:#bdbdbd;
@@ -64,9 +68,7 @@ body{
   object-fit:contain;
   position:relative;
   z-index:10;
-  filter:
-  drop-shadow(0 0 20px rgba(25,205,61,.4))
-  drop-shadow(0 0 40px rgba(255,0,0,.2));
+  animation:imgGlow 2.5s ease-in-out infinite alternate;
 }
 
 .dekor1{
@@ -331,4 +333,38 @@ hr{
 @font-face{
   font-family: "Martin";
   src: url("./Assets/boston/BOSTON\ CAPS.otf");
+}
+
+@keyframes glow{
+  from{
+    text-shadow:
+      0 0 5px #fff,
+      0 0 15px #15772880,
+      0 0 30px #0e7222b3,
+      0 0 50px #ff000026;
+    }
+
+  to{
+    text-shadow:
+      0 0 10px #fff,
+      0 0 25px #0f8326cc,
+      0 0 50px #11932b,
+      0 0 80px #239a3be6,
+      0 0 100px #ff000040;
+  }
+}
+
+@keyframes imgGlow{
+  from{
+    filter:
+      drop-shadow(0 0 15px rgba(25,205,61,.4))
+      drop-shadow(0 0 30px rgba(255,0,0,.15));
+  }
+
+  to{
+    filter:
+      drop-shadow(0 0 30px rgba(25,205,61,.8))
+      drop-shadow(0 0 60px rgba(25,205,61,.6))
+      drop-shadow(0 0 80px rgba(255,0,0,.3));
+  }
 }
